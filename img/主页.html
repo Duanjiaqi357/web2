@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>德云社</title>
+	<style type="text/css">
+	* {
+	    box-sizing: border-box;
+	}
+
+	body {
+	    font-family: Arial;
+	    margin: 0;
+	}
+	
+	ul,li{
+	list-style: none;
+	}
+	.box{
+		width: 100%;
+		height: 397px;
+		border: 1px solid red;
+		overflow: hidden;
+	}
+	.img{
+		width: 100%;
+		height: 500px;
+		padding-left: 320px;
+		padding-right: 320px;
+	}
+	.slider{
+		width: 8400px;
+		position: absolute;
+		left: -1200px;
+	}
+	.slide{
+		width: 1200px;
+		overflow: hidden;
+		float: left;
+	}
+	.box>span{
+		display: block;
+		width: 30px;
+		height: 50px;
+		text-align: center;
+		cursor: pointer;
+		color: #fff;
+		top: 175px;
+		line-height: 50px;
+		background: rgb(255,0,0);
+		font-size: 30px;
+		position: absolute;
+		opacity: 0;
+	}
+	#left{
+		left: 30px;
+	}
+	#right{
+		right: 30px;
+	}
+	.nav{
+		position: absolute;
+		left: 500px;
+		bottom: 20px;
+	}
+	.nav>li{
+		float: left;
+		width: 20px;
+		height: 20px;
+		background: #ccc;
+		cursor: pointer;
+		margin: 0 10px;
+		border-radius: 50%;
+	}
+	.nav .active{
+		background: red;
+	}
+	
+	.header {
+		width: 100%;
+		height: 630px;
+	    padding: 80px;
+	    text-align: center;
+	    background-image:url(小德云啊.jpeg);
+	    color: white;
+	}
+
+	.navbar {
+	    overflow: hidden;
+	    background-color: #333;
+	}
+	
+	.navbar a {
+	    float: left;
+	    display: block;
+	    color: white;
+	    text-align: center;
+	    padding: 14px 20px;
+	    text-decoration: none;
+	}
+	.navbar a:hover {
+	    background-color: #ddd;
+	    color: black;
+	}
+	
+	.row {  
+	    display: -ms-flexbox; 
+	    display: flex;
+	    -ms-flex-wrap: wrap; 
+	    flex-wrap: wrap;
+	}
+	 
+	
+	.side {
+	    -ms-flex: 30%; 
+	    flex: 30%;
+	    background-color: #ac6767; 
+	    padding: 20px;
+	}
+	 
+	
+	.main {   
+	    -ms-flex: 70%; 
+	    flex: 70%;
+	    background-image: url(粉.jpg);
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    padding: 20px;
+	}
+	 
+	
+	.fakeimg {
+	    background-color: #df9496;
+	    width: 100%;
+	    padding: 20px;
+	    font-style: italic;
+		font-family: '仿宋';
+		font-weight: 700;
+	}
+	 
+	.footer {
+	    padding: 10px;
+	    text-align: center;
+	    background: #987165;
+	} 
+	.meng{
+		font-size: 22px;
+		font-style: italic;
+		font-family: '仿宋';
+		font-weight: 900;
+		color: #bb505d;
+	}
+	</style>
+</head>
+<body>
+	<div class="header" id="box">
+		<div class="slider" id="slider">
+			<div class="slide"><img class="img" src="郭于.jpg"  alt=""></div>
+			<div class="slide"><img class="img" src="云郎.jpg"  alt=""></div>
+			<div class="slide"><img class="img" src="堂良.jpg"  alt=""></div>
+			<div class="slide"><img class="img" src="熙华.jpg"  alt=""></div>
+			<div class="slide"><img class="img" src="麟闫.jpg"  alt=""></div>
+			<div class="slide"><img class="img" src="龄龙.jpg"  alt=""></div>
+			<div class="slide"><img class="img" src="贤香.png"  alt=""></div>
+		</div>
+		<span id="left"></span>
+		<span id="right"></span>
+		<ul class="nav" id="nav">
+			<li class="active"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div> 
+	 
+	<div class="navbar">
+		<a href="主页.html">主页</a>
+	    <a href="简介.html">简介</a>
+	    <a href="寄语.html">寄语</a>
+	</div>
+	 
+	<div class="row">
+	 	<div class="side">
+	    	<h2>德云社</h2>
+	    	<h5>人生百般滋味，生活需要笑对</h5>
+			<img src="大德云.jpeg" class="fakeing" style="height:250px; width:400px; ">
+	        <h3>云鹤九霄</h3>
+	        <div class="fakeimg" style="height:60px;">云是少年独立 伴师多载</div><br>
+	        <div class="fakeimg" style="height:60px;">鹤是游及四海 风烟微澜</div><br>
+	        <div class="fakeimg" style="height:60px;">九是生死不弃 才郎皆卓</div><br>
+	        <div class="fakeimg" style="height:60px;">霄是年少轻狂 磨棱释怀</div>
+	</div>
+	
+	<div class="main">
+	    <h2>孟周</h2>
+	    <h5>孟周十年 只此今朝 携手共进 繁花似锦</h5>
+	        <div><img src="孟周十年.jpg" height="200" width="800"></div>
+	        <p class="meng">鹤是沉浮半生 其果必硕；九是长伴君侧 贤良不磋</p>
+	    <br>
+	    <h2>龄龙</h2>
+	    <h5>我有一碗酒 碗酒赠吾兄 吾兄留斟酌 斟酌话余生</h5>
+	    <div><img src="龄龙六年.jpg" height="200" width="800"></div>
+	    <p class="meng">九是秉性相融 玄面为开；九是热血难凉 饮冰自若</p>
+	  </div>
+	</div>
+	 
+	<div class="footer">
+		<h5>七七的快乐小站</h5>
+	</div> 
+</body> 
+<script type="text/javascript">
+//轮播图
+	var box = document.getElementById('box');
+		var oNavlist = document.getElementById('nav').children;
+		var slider = document.getElementById('slider');
+		var left = document.getElementById('left');
+		var right = document.getElementById('right');
+		var index = 1;
+		var timer;
+		var isMoving = false;
+		box.onmouseover = function(){
+			animate(left,{opacity:50})
+			animate(right,{opacity:50})
+			clearInterval(timer)
+		}
+		box.onmouseout = function(){
+			animate(left,{opacity:0})
+			animate(right,{opacity:0})
+			timer = setInterval(next, 800);
+		}
+		right.onclick = next;
+		left.onclick = prev;
+		for( var i=0; i<oNavlist.length; i++ ){
+			oNavlist[i].index = i;
+			oNavlist[i].onclick = function(){
+				index = this.index+1;
+				navmove();
+				animate(slider,{left:-1200*index});
+			}
+		}
+		function next(){
+			if(isMoving){
+				return;
+			}
+			isMoving = true;
+			index++;
+			navmove();
+			animate(slider,{left:-1200*index},function(){
+				if(index==6){
+					slider.style.left = '-1200px';
+					index = 1;
+				}
+				isMoving = false;
+			});
+		}
+		function prev(){
+			if(isMoving){
+				return;
+			}
+			isMoving = true;
+			index--;
+			navmove();
+			animate(slider,{left:-1200*index},function(){
+				if(index==0){
+					slider.style.left = '-800px';
+					index = 5;
+				}
+				isMoving = false;
+			});
+		}
+		function navmove(){
+			for( var i=0; i<oNavlist.length; i++ ){
+				oNavlist[i].className = "";
+			}
+			if(index >5 ){
+				oNavlist[0].className = "active";
+			}else if(index<=0){
+				oNavlist[4].className = "active";
+			}else {
+				oNavlist[index-1].className = "active";
+			}
+		}
+		timer = setInterval(next, 800);
+		function getStyle(obj, attr){
+		if(obj.currentStyle){
+			return obj.currentStyle[attr];
+		} else {
+			return getComputedStyle(obj, null)[attr];
+		}
+		}
+		function animate(obj,json,callback){
+			clearInterval(obj.timer);
+			obj.timer = setInterval(function(){
+				var isStop = true;
+				for(var attr in json){
+					var now = 0;
+					if(attr == 'opacity'){
+						now = parseInt(getStyle(obj,attr)*100);
+					}else{
+						now = parseInt(getStyle(obj,attr));
+					}
+					var speed = (json[attr] - now) / 8;
+					speed = speed>0?Math.ceil(speed):Math.floor(speed);
+					var cur = now + speed;
+					if(attr == 'opacity'){
+						obj.style[attr] = cur / 100;
+					}else{
+						obj.style[attr] = cur + 'px';
+					}
+					if(json[attr] !== cur){
+						isStop = false;
+					}
+				}
+				if(isStop){
+					clearInterval(obj.timer);
+					callback&&callback();
+				}
+			}, 30)
+		}
+</script>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>德云社</title>
+	<style type="text/css">
+	* {
+	    box-sizing: border-box;
+	}
+
+	body {
+	    font-family: Arial;
+	    margin: 0;
+	}
+	.navbar {
+	    overflow: hidden;
+	    background-color: #333;
+	}
+	.navbar a {
+	    float: left;
+	    display: block;
+	    color: white;
+	    text-align: center;
+	    padding: 14px 20px;
+	    text-decoration: none;
+	}
+	.footer {
+	    padding: 10px;
+	    text-align: center;
+	    background: #987165;
+	} 
+	#div_1{
+			margin: 0 auto;
+			text-align: center;
+			width:100%;
+			height: 1000px;
+			border: 1px solid black;
+			background-image: url(1.jpg);
+			background-repeat: no-repeat;
+	    	background-size: cover;
+		}
+	.button_1{
+		margin-top:300px; 
+		width: 200px;
+		height: 60px;
+		background-color: #987165;
+		border-radius: 20px;
+	}
+	#div_2{
+		margin: 0 auto;
+		width:100%;
+		background-image: url(2.jpg);
+		background-repeat: no-repeat;
+	    background-size: cover;
+		height: 1000px;
+		border: 1px solid black;
+	}
+	#p_1{
+		font-size: 100px;
+		text-align: center;
+		line-height: 700px;
+	}
+	#div_3{
+		border: 1px solid black;
+		margin: 0 auto;
+		width: 100%;
+		height: 1000px;
+		background-image: url(3.jpg);
+		background-repeat: no-repeat;
+	    background-size: cover;
+	}
+	.div_3{
+		margin:100px;
+		text-align: center;
+		font-family: '华文仿宋';
+		font-size: 60px;
+	}
+	</style>
+</head>
+<body>
+	<div class="navbar">
+		<a href="主页.html">主页</a>
+	    <a href="简介.html">简介</a>
+	    <a href="寄语.html">寄语</a>
+	</div> 
+	<div class="main">
+	    <div id="div_1">
+		<button class="button_1" id="button1">
+			查看寄语
+		</button>
+	</div>
+	<div id="div_2">
+		<div class="div_3" id="p_1">5</div>
+	</div>
+	</div>
+	<div id="div_3">
+		<div class="div_3" id="div_4">
+		</div>
+	</div>
+	<div class="footer">
+		<h5>七七的快乐小站</h5>
+	</div> 
+</body> 
+<script type="text/javascript">
+	var div_1 = document.getElementById("div_1");
+	var button1 = document.getElementById("button1");
+	var div_2 = document.getElementById("div_2");
+	var div_3 = document.getElementById("div_3");
+	var div_4 = document.getElementById("div_4");
+	div_2.style.display = "none";
+	div_3.style.display = "none";
+	var content ="愿你手捧鲜花 芬芳岁月"+'<br/>'+"愿你脚踏山河 繁华人生"+'<br/>'+"愿你满眼星辰 璀璨无边"+'<br/>'+"愿你得偿所愿 万事胜意"+'<br/>'+"愿角儿们前程似锦，平安喜乐且一马平川"+'<br/>'+"愿先生们平平安安，不负姑娘们日日思念";
+	var i = 0;
+	function show(){  
+	    str  = content.substr(0,i); 
+	    div_4.innerHTML = str + "_"; 
+	    i++; 
+	    if (i>content.length)
+	    	i=0; 
+	    setTimeout("show()",200); 
+	}
+	button1.onclick = function(){
+		setInter();
+		div_1.style.display = "none";
+		div_2.style.display = "block";		
+	}
+	var setInter = function(){
+		var count = 5;
+		countDown = setInterval(function(){
+			count--;
+			p_1.innerHTML = count;
+			if(count == 0){
+				div_2.style.display = "none";
+				div_3.style.display = "block";
+				show();
+			}
+		},1000);
+	}
+</script>
+</html>

@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>简介</title>
+	<style>
+		body,p,img{
+			margin:0; 
+			padding:0;
+		} 
+		body{
+			background-color: rgb(192,192,192);
+		}
+		.navbar {
+		    overflow: hidden;
+		    background-color: #333;
+		}
+		.navbar a {
+		    float: left;
+		    display: block;
+		    color: white;
+		    text-align: center;
+		    padding: 14px 20px;
+		    text-decoration: none;
+		}
+		.navbar a:hover {
+		    background-color: #ddd;
+		    color: black;
+		}
+		#box{
+			width:750px;
+			height:250px;
+			position:relative;
+			margin:100px auto;
+		}
+		#img1{
+			width:300px;
+			height:300px;
+			position:absolute;
+			left:0;
+			top:0;}
+
+		#slider{
+			width:112.5px;
+			height:112.5px;
+			position:absolute;
+			left:0;
+			top:0;
+			background:#CCC;
+			opacity:0.4;
+			cursor: move;
+			display:none; 
+			filter:alpha(opacity=40);}
+
+		#img2{
+			position:absolute;
+			right:0;
+			top:0;
+			display:none; 
+			width:300px;
+			height:300px;
+			overflow:hidden;}
+
+		#Bimg{
+			position:absolute;
+			left:0;
+			top:0;
+		}
+		.row {  
+		    width: 350px;
+		    height: 600px;
+		    float: left;
+		}
+		.side {
+		    -ms-flex: 30%; 
+		    flex: 30%;
+		    background-image: url(背景.jpg); 
+		    padding: 20px;
+		}
+		.fakeimg {
+			font-family: '宋体';
+			font-size: 20px;
+			font-weight: 700;
+		    width: 100%;
+		    padding: 10px;
+		}
+		.rrow{
+			width: 351px;
+			height: 450px;
+			background-color: #cde6c7; 
+			float: right;
+			margin-bottom: 2px;
+		}
+		.wen{
+			font-size: 100px;
+			text-shadow:10px 10px 10px black,0px 0px 2px orange,2px 2px 6px green;
+			text-align: center;
+		}
+		.zi1{
+			margin-top: 100px;
+			font-size: 40px;
+			text-shadow:5px 5px 5px white;
+			color: green;
+			float: left;
+		}
+		.zi2{
+			float: right;
+			font-size: 40px;
+			text-shadow:5px 5px 5px white;
+			color: green;
+		}
+		.bottom{
+			width: 1167px;
+			background-color: #cde6c7; 
+			height: 300px;
+			float: right;
+		}
+		.wenzi{
+			margin-top: 90px;
+			font-size: 20px;
+			font-family: '宋体';
+		}
+		.footer {
+			margin-top:404px;
+		    padding: 10px;
+		    text-align: center;
+		    background: #77ac98;
+		} 
+	</style>
+</head>
+
+<body>
+	<div class="navbar">
+		<a href="主页.html">主页</a>
+	    <a href="简介.html">简介</a>
+	    <a href="寄语.html">寄语</a>
+	</div>
+	<div class="row">
+	 	<div class="side">
+	    	<h2>德云社</h2>
+	    	<h5>人生百般滋味，生活需要笑对</h5>
+			<img src="大德云.jpeg" class="fakeing" style="height:250px; width:300px; ">
+			<p></p>
+	        <h3>他们说</h3>
+	        <div class="fakeimg" style="height:60px;">大海波涛浅，小人方寸深，从来名利地，易起是非心。                        --郭德纲</div><br>
+	        <div class="fakeimg" style="height:60px;">我不服这世界，世界会给我一个美好的明天。                       --孟鹤堂</div><br>
+	        <div class="fakeimg" style="height:60px;">爱和本该爱的都是相声。               --孙九芳</div>
+		</div>
+	</div>
+	<div class="rrow">
+		<p class="wen">德云社</p>
+		<p class="zi1">云鹤九霄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+		<p class="zi2">龙腾四海</p>
+	</div>
+ 	<div id="box">
+	    <div id="img1">
+	         <img src="小德云 .jpeg" width="300" height="300"/>
+	         <div id="slider"></div>
+	  	</div>
+       
+	    <div id="img2">
+	        <img src="小德云 .jpeg" height="800" width="600"  id="Bimg"/>
+	    </div>
+  	</div>
+  	<div class="bottom">
+  		<p class="wenzi">&nbsp;&nbsp;德云社是中国的大型专业相声社团，全称北京德云社文化传播有限公司，成立于1995年。曾经名为北京相声大会，2003年更名为德云社。以“让相声回归剧场”，做“真正的相声”为要旨。2011年7月3日，德云社在北展剧场开辟新形式，用方言以及话剧和相声混搭方式表演相声剧等，为观众演绎从清朝、民国到新中国成立后的各种风格流派的相声。
+“德云社”是以弘扬中华民族文化、培养曲艺人才、服务大众为主旨的曲艺演出团体。社团最初由著名相声演员张文顺、郭德纲、李菁于1995年创建，经历了二十五年的风雨历程走到现在实属艰辛，然值得欣慰的是经过郭德纲先生和众多位新老相声演员的不懈努力，德云社正在逐步走向辉煌。德云社所属的“北京相声大会”每周都在天桥乐茶园等地演出五、六场。
+</p>
+  	</div>
+  	<div class="footer">
+		<h5>七七的快乐小站</h5>
+	</div> 
+  	<script type="text/javascript">
+  	//放大镜
+		//1. 获取元素
+		var box = document.getElementById("box");
+		var img1 = document.getElementById("img1");
+		var slider = document.getElementById("slider");
+		var img2 = document.getElementById("img2");
+		var Bimg = document.getElementById("Bimg");
+
+		//2. 给小盒子添加事件，移入和移出、移动	 移入：浮动的slider和img2显示
+		img1.onmouseover = function(){
+			slider.style.display = "block";
+			img2.style.display = "block";
+		}
+		img1.onmouseout = function(){
+			slider.style.display = "none";
+			img2.style.display = "none";
+		}
+		img1.onmousemove = function(ev){
+			var ev = ev||window.event;
+			//（1）跟随鼠标的位置来计算放大镜的位置
+			var left = ev.clientX - box.offsetLeft - slider.offsetWidth/2;
+			var top = ev.clientY - box.offsetTop - slider.offsetHeight/2;
+			var maxLeft = img1.offsetWidth - slider.offsetWidth;
+			var maxTop = img1.offsetHeight - slider.offsetHeight;
+			left = left>maxLeft?maxLeft:left<0?0:left;
+			top = top>maxTop?maxTop:top<0?0:top;
+
+			// (2)设置放大镜的位置
+			slider.style.left = left +"px";
+			slider.style.top = top +"px";
+
+			//（3)根据放大镜的位置计算右侧大图移动的比例
+			var w = left/maxLeft;
+			var h = top/maxTop;
+
+			// (4)计算大图最大的移动范围
+			var BmaxLeft = img2.offsetWidth - Bimg.offsetWidth; 
+			var BmaxTop = img2.offsetHeight - Bimg.offsetHeight; 
+
+			// (5)根据比例计算右侧图片的移动距离，设置值
+			Bimg.style.left = w*BmaxLeft + "px";
+			Bimg.style.top = h*BmaxTop + "px";
+		}
+  	</script>
+</body>
+</html>
